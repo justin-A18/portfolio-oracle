@@ -433,6 +433,7 @@ body{
     display: inline;
     border-radius: .5rem;
     margin-top: 0;
+    text-align: center;
 }
 
 .about__description{
@@ -908,7 +909,7 @@ body{
         -ms-flex-direction: column;
             flex-direction: column;
     width: 50rem;
-    height: 30rem;
+    min-height: 30rem;
     padding: 1rem;
     gap: 3rem;
 }
@@ -1041,13 +1042,27 @@ body{
     .contacto__formulario{
         width: 100%;
     }
+
+    .form__datos-principales{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .input__name{
+        width: 100%;
+    }
+
+    .input__email{
+        width: 100%;
+    }
  }
 
 .footer{
     width: 100%;
     min-height: 8rem;
     padding: 2rem;
-    background-color: var(--color-card);
+    background-color: var(--section-card-color);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
